@@ -1,0 +1,44 @@
+/* ***************** Default Style for 50in50 *************** */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ***************** End Default Style for 50in50 *************** */
+.bg {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+
+.loading-text {
+  font-size: 50px;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

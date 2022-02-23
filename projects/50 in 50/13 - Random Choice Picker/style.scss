@@ -1,0 +1,68 @@
+/* ***************** Default Style for 50in50 *************** */
+//Roboto font
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,900&display=swap");
+
+//this means the borders, padding, etc won't affect the absolute width/height of an element.
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; //full viewable height of window
+  overflow: hidden;
+}
+
+/* ***************** End Default Style for 50in50 *************** */
+$color1: rgb(8, 107, 221);
+$color2: rgb(211, 138, 4);
+$color3: rgb(19, 19, 131);
+$color4: white;
+
+body {
+  background-color: $color1;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+label {
+  text-align: center;
+  color: $color4;
+}
+
+#enter-choices-here {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.choices {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.choice {
+  background-color: $color2;
+  border: none;
+  border-radius: 1em;
+  padding: 5px;
+  margin: 5px;
+  color: white;
+}
+
+.choice.active {
+  background-color: $color3;
+}

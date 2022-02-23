@@ -1,0 +1,138 @@
+/* ***************** Default Style for 50in50 *************** */
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,100;0,400;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+/* ***************** End Default Style for 50in50 *************** */
+body {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eafbff), color-stop(50%, #eafbff), color-stop(50%, #5290f9), to(#5290f9));
+  background-image: linear-gradient(to bottom, #eafbff 0%, #eafbff 50%, #5290f9 50%, #5290f9);
+}
+
+nav {
+  position: absolute;
+  padding: 20px;
+  width: 80px;
+  top: calc(50% - nav(height) / 2);
+  left: calc(50% - nav(width) / 2);
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: width 0.6s linear;
+  transition: width 0.6s linear;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  -webkit-transition: width 0.6s linear;
+  transition: width 0.6s linear;
+}
+
+nav ul li {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s linear, -webkit-transform 0.6s linear;
+  transition: opacity 0.6s linear, -webkit-transform 0.6s linear;
+  transition: transform 0.6s linear, opacity 0.6s linear;
+  transition: transform 0.6s linear, opacity 0.6s linear, -webkit-transform 0.6s linear;
+}
+
+nav ul a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav .icon {
+  background-color: white;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+
+nav .icon .line {
+  background-color: #5290f9;
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  -webkit-transition: -webkit-transform 0.6s linear;
+  transition: -webkit-transform 0.6s linear;
+  transition: transform 0.6s linear;
+  transition: transform 0.6s linear, -webkit-transform 0.6s linear;
+}
+
+nav .icon .line2 {
+  top: auto;
+  bottom: 10px;
+}
+
+nav .icon:focus {
+  outline: 0;
+}
+
+nav.active {
+  width: 350px;
+}
+
+nav.active ul {
+  width: 100%;
+}
+
+nav.active ul li {
+  opacity: 1;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+nav.active .icon .line1 {
+  -webkit-transform: rotate(-765deg) translateY(5.5px);
+          transform: rotate(-765deg) translateY(5.5px);
+}
+
+nav.active .icon .line2 {
+  -webkit-transform: rotate(765deg) translateY(-5.5px);
+          transform: rotate(765deg) translateY(-5.5px);
+}
+/*# sourceMappingURL=style.css.map */

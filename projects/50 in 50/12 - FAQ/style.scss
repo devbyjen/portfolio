@@ -1,0 +1,116 @@
+/* ***************** Default Style for 50in50 *************** */
+//Roboto font
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,100;0,400;1,900&display=swap");
+
+//this means the borders, padding, etc won't affect the absolute width/height of an element.
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+}
+
+/* ***************** End Default Style for 50in50 *************** */
+body {
+  background-color: papayawhip;
+}
+h1 {
+  margin-top: 50px;
+  text-align: center;
+}
+.faq-container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.faq {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 300ms ease;
+  button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+.faq.active {
+  background-color: white;
+}
+
+//the overlapping speech bubbles
+.faq.active::before,
+.faq.active::after {
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  font-size: 6rem;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+  opacity: 20%;
+  color: #2ecc71;
+}
+.faq.active::after {
+  top: -10px;
+  left: 40px;
+  transform: rotateY(180deg);
+  color: #3498db;
+}
+
+.faq-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  .fa-times {
+    display: none;
+  }
+  .fa-chevron-down {
+    display: block;
+  }
+}
+
+.faq.active .faq-toggle {
+  background-color: #9fa4a8;
+  color: white;
+  .fa-times {
+    display: block;
+  }
+  .fa-chevron-down {
+    display: none;
+  }
+}
+
+.faq-toggle:focus {
+  outline: none;
+}
+
+.q {
+  font-weight: bold;
+  margin-right: 35px;
+}
+
+.a {
+  margin-top: 30px;
+  display: none;
+}
+
+.faq.active .a {
+  display: block;
+}

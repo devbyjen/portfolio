@@ -1,0 +1,92 @@
+/* ***************** Default Style for 50in50 *************** */
+//Roboto font
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,100;0,400;1,900&display=swap');
+
+
+
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;//full viewable height of window
+    overflow: hidden;
+}
+
+/* ***************** End Default Style for 50in50 *************** */
+
+body {
+    background-color: steelblue;
+    color: white;
+}
+
+.container {
+    background-color: rgb(36, 65, 88);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    input {
+        display: block;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid white;
+        width: 100%;
+        margin: 30px 0 0 0 ;
+        outline: none;
+    }
+    input:focus, input:valid {
+        outline: none;
+        border-bottom-color: lightblue;
+    }
+    button {
+        width: 100%;
+        padding: 10px 0;
+        color:rgb(1, 20, 37);
+        background-color: lightblue;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    button:focus{
+        outline: 0;
+    }
+    button:active {
+        transform: scale(0.98); //shrink a tiny bit on click
+    }
+
+}
+
+a {
+    color: rgb(123, 172, 216);
+    font-weight: bold;
+}
+
+.form-control{
+    position: relative;
+    label {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        span {
+            display: inline-block;
+            min-width: 5px;
+            transform: translateY(-20px);
+            transition: 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);//defines a curve with variable speed from start to end. Almost a bounce effect.
+        }
+    }
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: lightblue;
+    transform: translateY(-3rem);
+}

@@ -1,0 +1,72 @@
+/* ***************** Default Style for 50in50 *************** */
+//Roboto font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,900&display=swap');
+
+//this means the borders, padding, etc won't affect the absolute width/height of an element.
+* {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;//full viewable height of window
+    overflow: hidden;
+}
+
+/* ***************** End Default Style for 50in50 *************** */
+
+.cardContainer {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    overflow: hidden;
+
+}
+
+.card {
+    flex: 0.5;
+    height: 80vh;
+    transition: flex 100ms ease-in;
+    cursor:pointer;
+    position: relative;
+    margin: 5px;
+    img {
+        width:100%;
+        height: 100%;
+        border-radius: 2em;
+    }
+    figcaption {
+        display: block;
+        float: left;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color:white;
+        text-align: center;
+        opacity: 0;
+    }
+}
+
+.active {
+    flex:5;
+    figcaption {
+        opacity: 100;
+        transition: opacity 100ms ease-in 100ms;
+    }
+}
+
+@media(max-width: 480px) {
+    .container {
+        width: 100vh;
+    }
+
+    .card:nth-of-type(4), .card:nth-of-type(5) {
+        display:none;
+    }
+}

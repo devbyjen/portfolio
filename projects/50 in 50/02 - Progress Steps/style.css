@@ -1,0 +1,118 @@
+/* ***************** Default Style for 50in50 *************** */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ***************** End Default Style for 50in50 *************** */
+.progress-container {
+  width: 20em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.empty-progress {
+  background-color: #c5c5c5;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -2;
+  width: 100%;
+}
+
+.progress {
+  background-color: #03a1fd;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.progress0 {
+  width: 0%;
+}
+
+.progress1 {
+  width: 33%;
+}
+
+.progress2 {
+  width: 66%;
+}
+
+.progress3 {
+  width: 100%;
+}
+
+.circle {
+  border: 4px solid #c5c5c5;
+  padding: .2em .5em;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.active {
+  border-color: #03a1fd;
+}
+
+.btn {
+  display: inline;
+  background-color: #03a1fd;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 15px 5px #c5c5c5;
+          box-shadow: 5px 5px 15px 5px #c5c5c5;
+}
+
+.btn:disabled {
+  background-color: #c5c5c5;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: unset;
+}
+/*# sourceMappingURL=style.css.map */

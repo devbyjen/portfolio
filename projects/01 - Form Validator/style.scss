@@ -1,0 +1,74 @@
+/* ***************** Default Style for 50in50 *************** */
+//Roboto font
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,900&display=swap");
+
+//this means the borders, padding, etc won't affect the absolute width/height of an element.
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; //full viewable height of window
+  overflow: hidden;
+}
+
+/* ***************** End Default Style for 50in50 *************** */
+
+.form-container {
+  width: 300px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgb(100, 100, 100);
+  }
+  label {
+    color: rgb(77, 76, 76);
+    font-size: 0.8em;
+  }
+  button {
+    width: 100%;
+    background-color: rgb(41, 122, 150);
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  small {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 0.7em;
+    color: red;
+    visibility: hidden;
+  }
+  input:focus {
+    outline: 0;
+    border-color: rgb(50, 50, 50);
+  }
+  .form-control.error {
+    small {
+      visibility: visible;
+    }
+    input {
+      border: 1px solid red;
+    }
+  }
+  .form-control.success input {
+    border: 1px solid green;
+  }
+}
