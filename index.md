@@ -17,8 +17,7 @@ Here are a bunch of practice projects I did while refreshing my skills last year
 - [Event KeyCodes](https://devbyjen.github.io/portfolio/projects/50%20in%2050/11%20-%20Event%20KeyCodes/index.html)
 - [FAQ](https://devbyjen.github.io/portfolio/projects/50%20in%2050/12%20-%20FAQ/index.html)
 - [Random Choice Picker:](https://devbyjen.github.io/portfolio/projects/50%20in%2050/13%20-%20Random%20Choice%20Picker/index.html)
-- [Progress Steps](https://devbyjen.github.io/portfolio/projects/50%20in%2050/14%20-%20Progress%20Steps/index.html)
-- [Animated Navigation](https://devbyjen.github.io/portfolio/projects/50%20in%2050/15%20-%20Animated%20Navigation/index.html)
+- [Animated Navigation](https://devbyjen.github.io/portfolio/projects/50%20in%2050/14%20-%20Animated%20Navigation/index.html)
 
 ## Eduction and Experience
 - B.S. Computer Science, Utah State University (Cum Laude)
